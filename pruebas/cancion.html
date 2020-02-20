@@ -2,41 +2,53 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../vista/css/estilo.css">
-    <title>Cancion - Artista</title>
+    <title>$titulo_cancion - Aylamusica</title>
 </head>
 
 <body>
     <!--Cabecera-->
     <h1><a href="index.html">Aylamusica</a></h1>
-    <div>
-        <h2>Cancion</h2>
+    <div id="cancion">
+        <h2>$titulo_cancion</h2>
         <ol>
-            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO</li>
-            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO</li>
-            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO</li>
-            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO</li>
-            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO</li>
-            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO</li>
-            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO</li>
-            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO</li>
+            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES
+                UN PARRAFO</li>
+            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES
+                UN PARRAFO</li>
+            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES
+                UN PARRAFO</li>
+            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES
+                UN PARRAFO</li>
+            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES
+                UN PARRAFO</li>
+            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES
+                UN PARRAFO</li>
+            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES
+                UN PARRAFO</li>
+            <li>ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES UN PARRAFO ESTO ES
+                UN PARRAFO</li>
         </ol>
+    </div>
+    <div id="comentarios">
         <h3>Comentarios</h3>
-        <ul id="comentarios">
+        <ul id="ul_comentarios">
             <li>Como mola</li>
             <li>Como mola</li>
             <li>Como mola</li>
             <li>Como mola</li>
         </ul>
-        <form action="index.php" method="POST" role="form">
-            <label for="comentario">Comentario: </label>
-            <textarea rows="4" cols="50" name="texto_comentario" placeholder="Me gusta!"></textarea>
-            <button type="submit" name="boton_comentar">Comentar cancion</button>
-        </form>
-        <div class="footer">
-            <p>administracion@aylamusica.com</p>
-        </div>
+    </div>
+    <form action="index.php" method="POST" role="form" id="form_comentar">
+        <h4>Comentar</h4>
+        <label for="comentario">Comentario: </label>
+        <textarea rows="4" cols="50" name="texto_comentario" placeholder="Me gusta!"></textarea>
+        <button type="submit" name="boton_comentar">Comentar cancion</button>
+    </form>
+    <div class="footer">
+        <p>administracion@aylamusica.com</p>
     </div>
 </body>
 

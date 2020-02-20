@@ -21,30 +21,25 @@ ul li {
     list-style: none;
 }
 
+a {
+    color: #797979;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #797979;
+    text-decoration: none;
+    opacity: 1;
+}
+
 .li_cancion {
     padding: 8px;
     margin-bottom: 1%;
     box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.5);
 }
 
-a {
-    color: #dcddde;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
-    color: #dcddde;
-    text-decoration: none;
-}
-
-.li_cancion a:hover {
-    color: #dcddde;
-    text-decoration: none;
-    opacity: 1;
-}
-
-.footer {
+.li_cancion .footer {
     position: fixed;
     left: 0;
     bottom: 0;
