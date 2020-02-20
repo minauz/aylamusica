@@ -41,8 +41,7 @@ img.foto_cancion {
     height: auto;
 }
 
-#ul_comentarios li {
-    border: 1px solid white;
+div#cancion ol li {
     list-style: none;
 }
 
