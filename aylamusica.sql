@@ -7,6 +7,7 @@ USE aylamusica;
 CREATE TABLE cancion(
     cancion_id INT NOT NULL AUTO_INCREMENT,
     titulo VARCHAR(255),
+    artista VARCHAR(255),
     PRIMARY KEY (cancion_id)
 );
 
@@ -41,3 +42,5 @@ CREATE TABLE anuncio (
     visitas INT NOT NULL,
     PRIMARY KEY (id_anuncio)
 );
+
+INSERT INTO cancion VALUES ()
