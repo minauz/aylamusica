@@ -11,8 +11,5 @@ include_once 'view/show_view.php';
 
 actualizar_sesion();
 show_header();
-show_menu();
 show_content();
-show_footer();
-
 ?>
