@@ -43,4 +43,9 @@ CREATE TABLE anuncio (
     PRIMARY KEY (id_anuncio)
 );
 
-INSERT INTO cancion VALUES ()
+INSERT INTO
+    cancion (titulo, artista)
+VALUES
+    ("Tusa", "Karol G & Nicky Minaj"),
+    ("Malamente", "Rosalia"),
+    ("Kei", "Anuel AA");
