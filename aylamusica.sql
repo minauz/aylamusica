@@ -1,3 +1,7 @@
+-- noinspection SqlNoDataSourceInspectionForFile
+
+-- noinspection SqlDialectInspectionForFile
+
 DROP DATABASE aylamusica;
 
 CREATE DATABASE aylamusica;
@@ -8,6 +12,7 @@ CREATE TABLE cancion(
     cancion_id INT NOT NULL AUTO_INCREMENT,
     titulo VARCHAR(255),
     artista VARCHAR(255),
+    ruta_imagen VARCHAR(255),
     PRIMARY KEY (cancion_id)
 );
 
@@ -46,6 +51,6 @@ CREATE TABLE anuncio (
 INSERT INTO
     cancion (titulo, artista)
 VALUES
-    ("Tusa", "Karol G & Nicky Minaj"),
+    ("Tusa", "Karol G & Nicky Minaj","imagenes/1.jpeg"),
     ("Malamente", "Rosalia"),
     ("Kei", "Anuel AA");
