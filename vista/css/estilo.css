@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Game Over";
+    src: url(game_over.ttf);
+}
+
+body {
+    background-color: #1F1B24;
+    color: #c189ff;
+    font-family: "Game Over";
+}
+
