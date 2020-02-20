@@ -1,7 +1,7 @@
 body {
     font-family: 'Work Sans', sans-serif;
-    background-color: #1F1B24;
-    color: white;
+    background-color: #202225;
+    color: #dcddde;
 }
 
 h1 {
@@ -22,19 +22,26 @@ ul li {
 }
 
 .li_cancion {
+    padding: 8px;
     margin-bottom: 1%;
+    box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.5);
 }
 
-
 a {
-    color: white;
+    color: #dcddde;
     text-decoration: none;
-    font-style: none;
+    transition: 0.3s;
 }
 
 a:hover {
-    color:white;
+    color: #dcddde;
     text-decoration: none;
+}
+
+.li_cancion a:hover {
+    color: #dcddde;
+    text-decoration: none;
+    opacity: 1;
 }
 
 .footer {

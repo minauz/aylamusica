@@ -34,8 +34,8 @@ CREATE TABLE insulto (
 );
 
 CREATE TABLE anuncio (
-    id_anuncio INT NOT NULL AUTO_INCREMENT (255),
-    url VARCHAR (255),
+    id_anuncio INT NOT NULL AUTO_INCREMENT,
+    link VARCHAR (255),
     correo VARCHAR (255),
     imagen VARCHAR (255),
     visitas INT NOT NULL,
