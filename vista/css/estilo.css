@@ -17,13 +17,30 @@ img.foto_cancion {
     height: auto;
 }
 
-.cancion {
-    border: white 1px solid;
+ul li {
+    list-style: none;
+}
+
+.li_cancion {
     margin-bottom: 1%;
 }
 
+
 a {
-    color:white;
+    color: white;
     text-decoration: none;
     font-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #483d49;
+    width: 100%;
+    text-align: center;
 }
