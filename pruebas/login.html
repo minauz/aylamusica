@@ -2,16 +2,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../vista/css/estilo.css">
 </head>
 
 <body>
-    <h1>Login</h1>
-    <form action="index.php" method="POST" role="form">
-        <label for="contrasena">Nombre de usuario:</label>
-        <input type="password" name="input_password" id="input_contrasena" placeholder="Contraseña">
-        <button type="submit" name="login">Acceso a sitio web</button>
-    </form>
+    <div id="caja_login">
+        <h1>Aylamusica</h1>
+        <form action="index.php" method="POST" role="form">
+            <h2>Inicio de sesión</h2>
+            <div class="form-group">
+                <label for="contrasena">Contraseña: </label>
+                <input type="password" class="input" id="input_contrasena" placeholder="Password">
+            </div>
+            <button type="submit" name="login">Acceder a sitio web</button>
+        </form>
+    </div>
 </body>
 
 </html>
