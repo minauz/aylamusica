@@ -12,6 +12,11 @@ button {
     border-radius: 6px;
 }
 
+img {
+    width: 400px;
+    height: auto;
+}
+
 a {
     color: #dcddde;
     text-decoration: none;

@@ -18,10 +18,12 @@ function show_content()
         }
     }else {
         // Peticiones a traves de POST
-        if (isset($_POST[''])) {
-
+        if (isset($_POST['buscar_cancion'])) {
+            if (cancion_existe()) {
+                show_inicio();
+                show_resultado_canciones();
+            }
         }
-
     }
 }
 
