@@ -5,12 +5,25 @@ body {
 }
 
 h1 {
-    font-family: "Bruzh";
-    letter-spacing: 2px;
+    font-size: 2rem;
 }
 
-#caja_login {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+button {
+    border-radius: 6px;
+}
+
+img.foto_cancion {
+    max-width: 80px;
+    height: auto;
+}
+
+.cancion {
+    border: white 1px solid;
+    margin-bottom: 1%;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    font-style: none;
 }
