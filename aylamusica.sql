@@ -51,8 +51,8 @@ CREATE TABLE anuncio (
 INSERT INTO
     cancion (titulo, artista,ruta_imagen)
 VALUES
-    ("Tusa", "Karol G & Nicky Minaj","imagenes/1.jpeg"),
-    ("Malamente", "Rosalia","imagenes/2.jpeg"),
-    ("Kei", "Anuel AA","imagenes/3.jpg"),
-    ("Secreto", "Anuel AA","imagenes/4.jpg"),
-    ("Amanece", "Anuel AA","imagenes/5.jpg");
+    ("Tusa", "Karol G & Nicky Minaj","vista/imagenes/1.jpeg"),
+    ("Malamente", "Rosalia","vista/imagenes/2.jpeg"),
+    ("Kei", "Anuel AA","vista/imagenes/3.jpg"),
+    ("Secreto", "Anuel AA","vista/imagenes/4.jpg"),
+    ("Amanece", "Anuel AA","vista/imagenes/5.jpg");

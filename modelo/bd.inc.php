@@ -1,6 +1,6 @@
 <?php
 
-define("config", json_decode(file_get_contents("configuracion.json"), true));
+define("config", json_decode(file_get_contents("configuracion.ejemplo.json"), true));
 
 function connection()
 {

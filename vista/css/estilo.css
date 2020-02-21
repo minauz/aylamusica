@@ -1,7 +1,7 @@
 body {
     font-family: 'Work Sans', sans-serif;
-    background-color: #252525;
-    color: #dcddde;
+    background-image: linear-gradient(to right, #ff9b5d, #ff476e);
+    color: white;
 }
 
 h1 {
@@ -18,21 +18,31 @@ img {
 }
 
 a {
-    color: #dcddde;
+    color: white;
     text-decoration: none;
     transition: 0.3s;
 }
 
 a:hover {
-    color: #797979;
+    color: black;
     opacity: 1;
     text-decoration: none;
 }
 
+.li_cancion a {
+    color:black;
+}
+
+.li_cancion a:hover {
+    color:gray;
+}
+
 .li_cancion {
+    color:black;
+    background-color: white;
     padding: 6px;
     margin-bottom: 1%;
-    box-shadow: 1px 1px 20px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 20px 1px black;
     border-radius: 5px;
 }
 
@@ -41,21 +51,11 @@ a:hover {
     list-style: none;
 }
 
-img.foto_cancion {
-    max-width: 80px;
-    height: auto;
+img.miniatura_cancion {
+    max-width: 100px;
+    max-height: 100px;
 }
 
 div#cancion ol li {
     list-style: none;
-}
-
-.footer {
-    border-top: white 2px solid;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    background-color: #242323;
-    width: 100%;
-    text-align: center;
 }
