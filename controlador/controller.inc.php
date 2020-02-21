@@ -7,23 +7,25 @@
 */
 function show_content()
 {
-    if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-        if (!isset($_GET['cmd'])) {
-            show_inicio();
-        }else {
-            switch ($_GET['cmd']) {
-                case 'inicio':
-                    show_inicio();
-            }
-        }
-    }else {
-        // Peticiones a traves de POST
-        if (isset($_POST['buscar_cancion'])) {
-            if (cancion_existe()) {
+    if (connection() != null) {
+        if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+            if (!isset($_GET['cmd'])) {
                 show_inicio();
-                show_resultado_canciones();
+            } else {
+                switch ($_GET['cmd']) {
+                    case 'inicio':
+                        show_inicio();
+                }
+            }
+        } else {
+            // Peticiones a traves de POST
+            if (isset($_POST['buscar_cancion'])) {
+                show_inicio();
+                show_lista_canciones();
             }
         }
+    } else {
+        show_error();
     }
 }
 
@@ -51,4 +53,5 @@ function actualizar_sesion()
         }
     }
 }
+
 ?>
