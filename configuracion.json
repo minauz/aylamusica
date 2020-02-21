@@ -5,8 +5,8 @@
     "contrasena_admin": "pass1234",
     "tiempo_sesion": "10",
     "imagen_encriptada": "vista/img/encriptada.png",
-    "bd_server": "127.0.0.1",
-    "bd_usuario": "mysql",
+    "bd_server": "mysql",
+    "bd_usuario": "root",
     "bd_contrasena": "tiger",
     "bd_nombre": "aylamusica"
 }
