@@ -52,5 +52,7 @@ INSERT INTO
     cancion (titulo, artista)
 VALUES
     ("Tusa", "Karol G & Nicky Minaj","imagenes/1.jpeg"),
-    ("Malamente", "Rosalia"),
-    ("Kei", "Anuel AA");
+    ("Malamente", "Rosalia","imagenes/2.jpeg"),
+    ("Kei", "Anuel AA","imagenes/3.jpg"),
+    ("Secreto", "Anuel AA","imagenes/4.jpg"),
+    ("Amanece", "Anuel AA","imagenes/5.jpg");

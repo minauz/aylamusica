@@ -45,4 +45,9 @@ function show_resultado_canciones()
     ';
 }
 
+function show_msg($msg)
+{
+    echo "<script type='text/javascript'>alert('" . $msg . "');</script>";
+}
+
 ?>
