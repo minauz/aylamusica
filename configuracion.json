@@ -6,7 +6,7 @@
     "tiempo_sesion": "10",
     "imagen_encriptada": "vista/img/encriptada.png",
     "bd_server": "127.0.0.1",
-    "bd_usuario": "root",
+    "bd_usuario": "mysql",
     "bd_contrasena": "tiger",
     "bd_nombre": "aylamusica"
 }

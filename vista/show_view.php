@@ -24,38 +24,38 @@ function show_inicio()
 function show_lista_canciones()
 {
     $canciones_encontradas = consultar_cancion($_POST["input_buscar"]);
-    echo $canciones_encontradas->num_rows;
-
-
     echo '
         <div id="canciones">
             <h2 class="ml-2">Canciones buscadas con "', $_POST['input_buscar'], '". </h2>
         ';
     if ($canciones_encontradas->num_rows == 0) {
         echo '
-        <p>Ningun resultado.</p>';
+            <p>Ningun resultado.</p>';
     } else {
         if ($canciones_encontradas->num_rows > 0) {
             echo '
-            <ul>';
+                <ul>';
             while ($row = $canciones_encontradas->fetch_assoc()) {
                 echo '
-                <li class="li_cancion mx-3">
-                    <a href="index.php?cmd=cancion">
-                        <img class="foto_cancion" src="'.$row['ruta_imagen'].'">
-                        <span>'.$row["titulo"].' - '.$row["artista"].'</span>
-                    </a>
-                </li>
+                    <li class="li_cancion mx-3">
+                        <a href="index.php?cmd=cancion">
+                            <img class="foto_cancion" src="' . $row['ruta_imagen'] . '">
+                            <span>' . $row["titulo"] . ' - ' . $row["artista"] . '</span>
+                        </a>
+                    </li>
                 ';
             }
             echo '
-            </ul>
-        </div>';
+                </ul>
+            ';
         }
+        echo '
+        </div>';
     }
 }
 
-function show_cancion() {
+function show_cancion()
+{
 
 }
 
