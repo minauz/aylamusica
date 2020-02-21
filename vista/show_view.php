@@ -24,14 +24,14 @@ function show_inicio()
 function show_lista_canciones()
 {
     $canciones_encontradas = consultar_cancion($_POST["input_buscar"]);
-
+    echo $canciones_encontradas->num_rows;
 
 
     echo '
         <div id="canciones">
             <h2 class="ml-2">Canciones buscadas con "', $_POST['input_buscar'], '". </h2>
         ';
-    if (0 <= 0) {
+    if ($canciones_encontradas->num_rows == 0) {
         echo '
         <p>Ningun resultado.</p>';
     } else {

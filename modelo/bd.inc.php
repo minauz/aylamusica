@@ -13,6 +13,8 @@ function connection()
     if ($conn->connect_error) {
         return null;
     } else {
+        mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
         return $conn;
     }
 }
@@ -28,8 +30,8 @@ function consultar_cancion($buscar)
 {
     $conn = connection();
     try {
-        $stmt = $conn->prepare("SELECT titulo,artista,ruta_imagen FROM cancion WHERE titulo LIKE %?% OR artista LIKE %?%");
-        $stmt->bind_param("s", $buscar);
+        $stmt = $conn->prepare("SELECT titulo, artista, ruta_imagen FROM cancion WHERE titulo LIKE CONCAT('%', ?, '%') OR artista LIKE CONCAT('%', ?, '%');");
+        $stmt->bind_param("ss", $buscar, $buscar);
         $stmt->execute();
         $result = $stmt->get_result();
         $stmt->close();
