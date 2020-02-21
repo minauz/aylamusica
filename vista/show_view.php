@@ -35,31 +35,34 @@ function show_lista_canciones()
         echo '
         <p>Ningun resultado.</p>';
     } else {
-        echo '
-    <ul>
-        <li class="li_cancion mx-3">
-            <a href="cancion.html">
-                <!--Cargar con los datos de la cancion pulsada una nueva pagina con la cancion-->
-                <img class="foto_cancion" src="https://www.europaremix.com/img/p/10498-2442-large.jpg">
-                <span>Tusa - Karol G</span>
-            </a>
-        </li>
-        <li class="li_cancion mx-3" id="cancion_id">
-            <a href="cancion.html">
-                <img class="foto_cancion" src="https://www.europaremix.com/img/p/10498-2442-large.jpg">
-                <span>Tusa - Karol G</span>
-            </a>
-        </li>
-    </ul>
-</div>
-';
+        if ($canciones_encontradas->num_rows > 0) {
+            echo '
+            <ul>';
+            while ($row = $canciones_encontradas->fetch_assoc()) {
+                echo '
+                <li class="li_cancion mx-3">
+                    <a href="index.php?cmd=cancion">
+                        <img class="foto_cancion" src="'.$row['ruta_imagen'].'">
+                        <span>'.$row["titulo"].' - '.$row["artista"].'</span>
+                    </a>
+                </li>
+                ';
+            }
+            echo '
+            </ul>
+        </div>';
+        }
     }
+}
+
+function show_cancion() {
+
 }
 
 function show_error()
 {
     echo '
-    <h1 class="text-center">LA WEB NO FUNCIONA</h1>';
+    <h1 class="text-center">No hay conexion con la base de datos </h1>';
 }
 
 function show_msg($msg)
