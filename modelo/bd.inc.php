@@ -13,6 +13,7 @@ function connection()
     if ($conn->connect_error) {
         return null;
     } else {
+        $conn->set_charset('utf8mb4');
         mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         return $conn;
     }

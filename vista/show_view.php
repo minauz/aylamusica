@@ -70,7 +70,7 @@ function show_cancion()
             ';
     while ($row = $parrafos->fetch_assoc()) {
         echo '
-            <li class="li_parrafo">' . $row['texto_parrafo'] . ' </li>
+            <li class="li_parrafo" style="white-space: pre-line;">' . $row['texto_parrafo'] . ' </li>
             ';
     }
     echo '
