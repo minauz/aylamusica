@@ -25,7 +25,7 @@ function show_lista_canciones()
 {
     $canciones_encontradas = consultar_cancion($_POST["input_buscar"]);
     echo '
-        <div id="canciones">
+        <div id="canciones" class="container text-center">
             <h2 class="ml-2">Canciones buscadas con "', $_POST['input_buscar'], '". </h2>
         ';
     if ($canciones_encontradas->num_rows == 0) {
@@ -38,7 +38,7 @@ function show_lista_canciones()
             while ($row = $canciones_encontradas->fetch_assoc()) {
                 echo '
                     <li class="li_cancion mx-3">
-                        <a href="index.php?cmd=cancion">
+                        <a href="index.php?cmd=mostrar_cancion&id_cancion=' . $row['cancion_id'] . '">
                             <img class="miniatura_cancion" src="' . $row['ruta_imagen'] . '">
                             <span>' . $row["titulo"] . ' - ' . $row["artista"] . '</span>
                         </a>
@@ -56,6 +56,27 @@ function show_lista_canciones()
 
 function show_cancion()
 {
+    $cancion = getCancion($_GET['id_cancion']);
+    $parrafos = getParrafos($_GET['id_cancion']);
+
+    echo '
+    <div id="cancion" class="text-center container">
+        <img src="' . $cancion['ruta_imagen'] . '">
+        <h2>' . $cancion['titulo'] . '</h2>
+        <h3>' . $cancion['artista'] . '</h3>
+    ';
+    echo '
+        <ol>
+            ';
+    while ($row = $parrafos->fetch_assoc()) {
+        echo '
+            <li class="li_parrafo">' . $row['texto_parrafo'] . ' </li>
+            ';
+    }
+    echo '
+        </ol>
+    </div>
+    ';
 
 }
 

@@ -37,7 +37,7 @@ a:hover {
     color:gray;
 }
 
-.li_cancion {
+.li_cancion, .li_parrafo {
     color:black;
     background-color: white;
     padding: 6px;

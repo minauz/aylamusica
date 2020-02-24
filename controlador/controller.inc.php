@@ -15,7 +15,7 @@ function show_content()
                 switch ($_GET['cmd']) {
                     case 'inicio':
                         show_inicio();
-                    case 'cancion':
+                    case 'mostrar_cancion':
                         show_cancion();
                 }
             }

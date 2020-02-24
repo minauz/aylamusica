@@ -54,6 +54,69 @@ VALUES
     ("Secreto", "Anuel AA", "vista/imagenes/4.jpg"),
     ("Amanece", "Anuel AA", "vista/imagenes/5.jpg");
 
+INSERT INTO parrafo
+    (cancion_id, texto_parrafo)
+VALUES
+(2,"Ese cristalito roto
+Yo sentí cómo crujía
+Antes de caerse al suelo
+Ya sabía que se rompía (¡uh!)
+Está parpadeando
+La luz del descansillo
+Una voz en la escalera
+Alguien cruzando el pasillo"),
+(2,"Malamente (eso es) (así sí)
+Malamente (tra, tra)
+Mal, muy mal, muy mal, muy mal, muy mal (mira)
+Malamente (toma que toma) (''amonó)
+Malamente (eso es) (¡''illo!)
+Malamente
+Mal, muy mal, muy mal, muy mal, muy mal
+Malamente (¡uh!)"),
+(2,"Se ha puesto la noche rara
+Han salí''o luna y estrellas
+Me lo dijo esa gitana (¿qué?)
+Mejor no salir a verla (no)
+Sueño que estoy andando
+Por un puente y que la acera (mira, mira, mira, mira)
+Cuanto más quiero cruzarlo (¡va!)
+Más se mueve y tambalea"),
+(2,"Malamente (eso es) (así sí)
+Malamente (tra, tra)
+Mal, muy mal, muy mal, muy mal, muy mal (mira)
+Malamente (toma que toma) (''amonó)
+Malamente (eso es) (¡''illo!)
+Malamente
+Mal, muy mal, muy mal, muy mal, muy mal
+Malamente"),
+(2,"Aunque no esté bonita
+La noche, ¡Undivé!
+Voy a salir pa'' la calle
+En la manita los aros brillando
+En mi piel los corales
+Me proteja y me salve
+Me ilumine y me guarde
+Y por delante
+No voy a perder ni un minuto en volver a pensarte"),
+(2,"Malamente (eso es) (así sí)
+Malamente (tra, tra)
+Mal, muy mal, muy mal, muy mal, muy mal (mira)
+Malamente (toma que toma) (''amono)
+Malamente (eso es) (¡''illo!)
+Malamente
+Mal, muy mal, muy mal, muy mal, muy mal (¡''illo!)
+Malamente (Toma que toma)
+Malamente (¡''illo!)
+Malamente (tra, tra)
+Mal, muy mal, muy mal, muy mal, muy mal (''amonó)
+Malamente (Toma que toma) (''amonó)
+Malamente (eso es)
+¡''Illo!
+Malamente
+Mal, muy mal, muy mal, muy mal, muy mal
+Malamente");
+
+
 INSERT INTO
     insulto (insulto)
 VALUES
