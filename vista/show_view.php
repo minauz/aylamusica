@@ -80,6 +80,27 @@ function show_cancion()
 
 }
 
+function show_login()
+{
+    echo '
+        <h2 class="text-center">Administración</h2>
+        <form class="my-4 form-inline justify-content-center" action="index.php" method="POST" role="form">
+            <label for="contraseña">Contraseña: </label>
+            <input class="form-control form-control-sm ml-3 w-25" type="password" id="input_login" name="input_login"
+                   placeholder="Contraseña" required>
+            <button type="submit" class="ml-2" name="hacer_login">Enviar</button>
+        </form>
+        
+    ';
+}
+
+function show_administracion()
+{
+    echo '
+        <h2 class="text-center">Administración</h2>
+    ';
+}
+
 function show_error()
 {
     echo '

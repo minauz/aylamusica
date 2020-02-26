@@ -79,4 +79,9 @@ function getCancion($id_cancion)
     }
 }
 
+function login_valido()
+{
+    return ($_POST['input_login'] == config['contrasena_admin']);
+}
+
 ?>

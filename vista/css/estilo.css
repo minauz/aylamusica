@@ -30,15 +30,15 @@ a:hover {
 }
 
 .li_cancion a {
-    color:black;
+    color: black;
 }
 
 .li_cancion a:hover {
-    color:gray;
+    color: gray;
 }
 
 .li_cancion, .li_parrafo {
-    color:black;
+    color: black;
     background-color: white;
     padding: 6px;
     margin-bottom: 1%;
@@ -52,8 +52,8 @@ a:hover {
 }
 
 img.miniatura_cancion {
-    max-width: 100px;
-    max-height: 100px;
+    width: 100px;
+    height: 100px;
 }
 
 div#cancion ol li {
