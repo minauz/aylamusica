@@ -88,7 +88,7 @@ function show_loging()
             <label for="contraseña">Contraseña: </label>
             <input class="form-control form-control-sm ml-3 w-25" type="password" id="input_login" name="input_login"
                    placeholder="Contraseña" required>
-            <button type="submit" class="ml-2" name="hacer_login">Enviar</button>
+            <button type="submit" class="ml-2 btn btn-light" name="hacer_login">Enviar</button>
         </form>
         
     ';

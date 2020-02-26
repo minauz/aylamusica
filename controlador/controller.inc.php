@@ -17,7 +17,8 @@ function show_content()
                             show_loging();
                             break;
                     }
-                }
+                } else
+                    show_inicio();
             } else {
                 switch ($_GET['cmd']) {
                     case 'inicio':
@@ -33,10 +34,10 @@ function show_content()
             if (isset($_POST['buscar_cancion'])) {
                 show_inicio();
                 show_lista_canciones();
-            }else if (isset($_POST['hacer_login'])) {
+            } else if (isset($_POST['hacer_login'])) {
                 if (login_valido($_POST['input_login'])) {
                     show_administracion();
-                }else {
+                } else {
                     show_loging();
                 }
             }
@@ -53,21 +54,6 @@ function show_content()
 * S:
 * SQL:
 */
-function actualizar_sesion()
-{
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        if (isset($_POST['login'])) {
-            if (login_ok()) {
-                $_SESSION['user'] = $_POST['pass_user'];
-            }
-        }
-    } else {
-        if (isset($_GET['admin'])) {
-            if ($_GET['admin'] == 'logout') {
-                unset($_SESSION);
-                session_destroy();
-            }
-        }
-    }
-}
+
+
 ?>

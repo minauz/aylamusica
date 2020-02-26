@@ -12,7 +12,6 @@ include_once 'vista/footer.inc.php';
 
 
 
-actualizar_sesion();
 show_header();
 show_content();
 show_footer();
