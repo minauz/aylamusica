@@ -30,7 +30,7 @@ function show_content()
                 show_inicio();
                 show_lista_canciones();
             }else if (isset($_POST['hacer_login'])) {
-                if (login_valido()) {
+                if (login_valido($_POST['input_login'])) {
                     show_administracion();
                 }else {
                     show_login();

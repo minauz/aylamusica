@@ -20,18 +20,18 @@ function connection()
 }
 
 /*
-*	Muestra el contenido de la parte central de la página
-*	E: Se necesita el dato a buscar proveniente de SQL
-*	S:
-*	SQL: SELECT titulo,artista,ruta_imagen FROM cancion WHERE titulo OR artista LIKE $input_buscar
+*	Conexión a la base de datos
+*	E: buscar
+*	S: conn (variable de tipo connection)
+*	SQL:
 */
 
-function consultar_cancion($buscar)
+function consultar_cancion($texto_buscar)
 {
     $conn = connection();
     try {
         $stmt = $conn->prepare("SELECT cancion_id,titulo, artista, ruta_imagen FROM cancion WHERE titulo LIKE CONCAT('%', ?, '%') OR artista LIKE CONCAT('%', ?, '%');");
-        $stmt->bind_param("ss", $buscar, $buscar);
+        $stmt->bind_param("ss", $texto_buscar, $texto_buscar);
         $stmt->execute();
         $result = $stmt->get_result();
         $stmt->close();
@@ -42,17 +42,17 @@ function consultar_cancion($buscar)
 }
 
 /*
-*	Muestra el contenido de la parte central de la página
-*	E: Se necesita el dato a buscar proveniente de SQL
-*	S:
-*	SQL: SELECT titulo,artista,ruta_imagen FROM cancion WHERE titulo OR artista LIKE $input_buscar
+*	Obtener parrafos de una cancion
+*	E: Le pasamos el id de la cancion.
+*	S: $result
+*	SQL: SELECT parrafo.texto_parrafo FROM cancion JOIN parrafo ON cancion.cancion_id= ? AND parrafo.cancion_id= ?;
 */
 
 function getParrafos($id_cancion)
 {
     $conn = connection();
     try {
-        $stmt = $conn->prepare("SELECT cancion.titulo,cancion.artista,parrafo.texto_parrafo FROM cancion JOIN parrafo ON cancion.cancion_id= ? AND parrafo.cancion_id= ?;");
+        $stmt = $conn->prepare("SELECT parrafo.texto_parrafo FROM cancion JOIN parrafo ON cancion.cancion_id= ? AND parrafo.cancion_id= ?;");
         $stmt->bind_param("ii", $id_cancion, $id_cancion);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -62,6 +62,13 @@ function getParrafos($id_cancion)
         return $e->getCode();
     }
 }
+
+/*
+*	Nos devuelve un array con los datos de la cancion.
+*	E: Le pasamos el id de la cancion.
+*	S:
+*	SQL: SELECT * FROM cancion WHERE cancion_id
+*/
 
 function getCancion($id_cancion)
 {
@@ -79,9 +86,16 @@ function getCancion($id_cancion)
     }
 }
 
-function login_valido()
+/*
+*	Comprobar login es correcto.
+*	E: 
+*	S:
+*	SQL: SELECT * FROM cancion WHERE cancion_id
+*/
+
+function login_valido($pass)
 {
-    return ($_POST['input_login'] == config['contrasena_admin']);
+    return ($pass == config['contrasena_admin']);
 }
 
 ?>
