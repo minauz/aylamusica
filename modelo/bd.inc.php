@@ -2,6 +2,13 @@
 
 define("config", json_decode(file_get_contents("configuracion.json"), true));
 
+/*
+*	Conexión a la base de datos
+*	E: buscar
+*	S: conn (variable de tipo connection)
+*	SQL:
+*/
+
 function connection()
 {
     $host = config["bd_server"];
@@ -20,10 +27,10 @@ function connection()
 }
 
 /*
-*	Conexión a la base de datos
+*	Nos devuelve el resultado de las canciones con ese texto buscado.
 *	E: buscar
-*	S: conn (variable de tipo connection)
-*	SQL:
+*	S: $result 
+*	SQL: SELECT cancion_id,titulo, artista, ruta_imagen FROM cancion WHERE titulo LIKE CONCAT('%', ?, '%') OR artista LIKE CONCAT('%', ?, '%');
 */
 
 function consultar_cancion($texto_buscar)
@@ -87,8 +94,8 @@ function getCancion($id_cancion)
 }
 
 /*
-*	Comprobar login es correcto.
-*	E: 
+*	Comprobar que el login es correcto.
+*	E: $pass contraseña del input de la contraseña
 *	S:
 *	SQL: SELECT * FROM cancion WHERE cancion_id
 */

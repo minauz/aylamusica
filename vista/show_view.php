@@ -15,7 +15,7 @@ function show_inicio()
         <label for="buscar">Buscar: </label>
         <input class="form-control form-control-sm ml-3 w-25" type="text" id="input_buscar" name="input_buscar"
                placeholder="Nombre de cancion / Artista" required>
-        <button type="submit" class="ml-2" name="buscar_cancion">Buscar cancion</button>
+        <button type="submit" class="ml-2 btn btn-light" name="buscar_cancion">Buscar cancion</button>
     </form>
 </div>
     ';
@@ -80,7 +80,7 @@ function show_cancion()
 
 }
 
-function show_login()
+function show_loging()
 {
     echo '
         <h2 class="text-center">Administración</h2>
@@ -97,7 +97,22 @@ function show_login()
 function show_administracion()
 {
     echo '
-        <h2 class="text-center">Administración</h2>
+    <div id="botones" class="d-flex flex-column text-center">
+        <h2>Administracion</h2>
+        <div id="botones_1" class="p-2">
+            <button class="btn btn-light">Subir cancion</button>
+            <button class="btn btn-light">Gestionar anuncios</button>
+            <button class="btn btn-light">Correo masivo</button>
+            <button class="btn btn-light">Estado web</button>
+        </div>
+        <div id="botones_2" class="p-2">
+            <button class="btn btn-light"><a href="">Importar canciones</a></button>
+            <button class="btn btn-light">Exportar canciones</button>
+            <button class="btn btn-light">Contraseña</button>
+            <button class="btn btn-light">Añadir insulto</button>
+            <button class="btn btn-danger"><a href="index.php?admin=logout">Cerrar sesion</a></button>
+        </div>
+    </div>
     ';
 }
 

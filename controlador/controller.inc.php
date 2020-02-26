@@ -10,10 +10,14 @@ function show_content()
     if (connection() != null) {
         if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             if (!isset($_GET['cmd'])) {
-                if (isset($_GET['login'])) {
-                    show_login();
-                } else
-                    show_inicio();
+                if (isset($_GET['admin'])) {
+                    switch ($_GET['admin']) {
+                        case 'login':
+                        case 'logout':
+                            show_loging();
+                            break;
+                    }
+                }
             } else {
                 switch ($_GET['cmd']) {
                     case 'inicio':
@@ -33,7 +37,7 @@ function show_content()
                 if (login_valido($_POST['input_login'])) {
                     show_administracion();
                 }else {
-                    show_login();
+                    show_loging();
                 }
             }
         }
@@ -58,13 +62,12 @@ function actualizar_sesion()
             }
         }
     } else {
-        if (isset($_GET['cmd'])) {
-            if ($_GET['cmd'] == 'logout') {
+        if (isset($_GET['admin'])) {
+            if ($_GET['admin'] == 'logout') {
                 unset($_SESSION);
                 session_destroy();
             }
         }
     }
 }
-
 ?>
