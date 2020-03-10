@@ -21,11 +21,11 @@ function show_content()
                     show_inicio();
             } else {
                 switch ($_GET['cmd']) {
-                    case 'inicio':
-                        show_inicio();
-                        break;
                     case 'mostrar_cancion':
                         show_cancion();
+                        break;
+                    default:
+                        show_inicio();
                         break;
                 }
             }

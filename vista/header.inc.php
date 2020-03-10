@@ -19,5 +19,11 @@ function show_header()
 </head>
 
 <body class="mx-3">
+<nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.php?cmd=inicio">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+</nav>
 <h1 class="text-center"><a href="index.php?cmd=inicio">Aylamusica</a></h1>';
 } ?>
