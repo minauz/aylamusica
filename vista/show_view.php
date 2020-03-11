@@ -39,7 +39,7 @@ function show_lista_canciones()
                 echo '
                     <li class="li_cancion mx-3">
                         <a href="index.php?cmd=mostrar_cancion&id_cancion=' . $row['cancion_id'] . '">
-                            <img class="miniatura_cancion" src="' . $row['ruta_imagen'] . '">
+                            <img class="miniatura_cancion" src="' . $row['ruta_imagen'] . '" alt="Imagen de cancion '.$row["titulo"].'">
                             <span>' . $row["titulo"] . ' - ' . $row["artista"] . '</span>
                         </a>
                     </li>
