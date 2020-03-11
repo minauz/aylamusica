@@ -1,6 +1,6 @@
 # Proyecto segunda evaluación de DINT.
 
-- [x] Buscar una canción por una parte del título
+- [x] Buscar una canción por una parte del título (cancion ejemplo 'Malamente')
 
 - [ ] Comentar un párrafo de una canción
 
