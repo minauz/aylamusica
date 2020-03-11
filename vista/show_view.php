@@ -106,7 +106,7 @@ function show_administracion()
             <button class="btn btn-light">Estado web</button>
         </div>
         <div id="botones_2" class="p-2">
-            <button class="btn btn-light"><a href="">Importar canciones</a></button>
+            <button class="btn btn-light">Importar canciones</button>
             <button class="btn btn-light">Exportar canciones</button>
             <button class="btn btn-light">Contraseña</button>
             <button class="btn btn-light">Añadir insulto</button>
