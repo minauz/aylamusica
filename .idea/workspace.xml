@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1bb304ca-e97d-4cc4-b107-4b0f09393366" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vista/header.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/vista/header.inc.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="git@github.com:mcanalejas/aylamusica.git" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Y5Mt0VRLi9EV9J6dhwW27SqjSH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1bb304ca-e97d-4cc4-b107-4b0f09393366" name="Default Changelist" comment="" />
+      <created>1582228212722</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582228212722</updated>
+      <workItem from="1582228215667" duration="4026000" />
+      <workItem from="1582289318973" duration="4445000" />
+      <workItem from="1582304289075" duration="3948000" />
+      <workItem from="1582309200616" duration="619000" />
+      <workItem from="1583262573279" duration="24000" />
+      <workItem from="1583857077799" duration="3345000" />
+      <workItem from="1583960783641" duration="2346000" />
+      <workItem from="1584360437784" duration="244000" />
+      <workItem from="1584646413008" duration="418000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="747" y="310" width="426" height="485" key="FileChooserDialogImpl" timestamp="1583262595473">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="747" y="310" width="426" height="485" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1583262595473" />
+    <state x="460" y="187" key="SettingsEditor" timestamp="1582228712175">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="460" y="187" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1582228712175" />
+    <state x="645" y="379" key="com.intellij.ide.util.TipDialog" timestamp="1582228218555">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="645" y="379" key="com.intellij.ide.util.TipDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1582228218555" />
+    <state x="637" y="150" width="738" height="807" key="find.popup" timestamp="1584360628769">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="637" y="150" width="738" height="807" key="find.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1584360628769" />
+    <state width="600" height="424" key="javadoc.popup" timestamp="1582228630492">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1582228630492" />
+  </component>
+</project>
